@@ -1,0 +1,24 @@
+{
+  "name": "arctan-circuit",
+  "version": "1.0.0",
+  "description": "A test project to replicate interactable electrical diagrams in code",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ArctanStudios/Arctan-Circuit.git"
+  },
+  "author": "mister sircode",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ArctanStudios/Arctan-Circuit/issues"
+  },
+  "homepage": "https://github.com/ArctanStudios/Arctan-Circuit#readme",
+  "dependencies": {
+    "alea": "^1.0.1",
+    "arctan.meridian": "^1.1.0",
+    "electron": "^15.3.1"
+  }
+}

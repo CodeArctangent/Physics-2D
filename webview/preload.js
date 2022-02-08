@@ -1,14 +1,9 @@
 // Basic Arctan Experiments UI Setup
 
-let cvs;
-let ctx;
-
 window.addEventListener('DOMContentLoaded', () => {
     let body = document.querySelector('body');
     body.insertBefore(titlebar(), body.firstChild);
     makeButtonsUsable();
-    cvs = document.querySelector('.region');
-    ctx = cvs.getContext('2d');
     initialize();
 });
 
@@ -35,7 +30,16 @@ function makeButtonsUsable() {
 // Actual Program
 
 let { Vector, Color } = require('arctan.meridian');
+let { Paper } = require('arctan.paper');
 
-function initialize() { // Start from within doc body above to make sure you dont have any issues
-    
+let cvs;
+
+function initialize() { // Start from within document body above to make sure you dont have any issues
+    cvs = new Paper('.region', 600, 600, false);
+    cvs.fillStyle = 'white';
+    cvs.fillRect(35, 10, 10, 50);
+    cvs.rotatePoint(50, 50);
+    cvs.fillStyle = 'blue';
+    cvs.fillRect(35, 10, 10, 50);
+
 }
